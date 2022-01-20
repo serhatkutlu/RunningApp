@@ -1,13 +1,14 @@
-package com.androiddevs.runningappyt
+package com.androiddevs.runningappyt.DB
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.androiddevs.runningappyt.DB.Run
 
 
 @Dao
 interface RunDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertRun(run:Run)
+    suspend fun insertRun(run: Run)
 
     @Delete
     suspend fun deleteRun(run: Run)

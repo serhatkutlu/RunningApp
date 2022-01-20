@@ -1,4 +1,4 @@
-package com.androiddevs.runningappyt
+package com.androiddevs.runningappyt.DB
 
 import android.graphics.Bitmap
 import androidx.room.Entity
